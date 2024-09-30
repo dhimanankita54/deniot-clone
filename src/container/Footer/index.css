@@ -1,0 +1,45 @@
+.text-div {
+  transition: transform 0.7s ease;
+}
+
+.progress {
+  position: sticky;
+  top: 0;
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+}
+
+.progress svg {
+  transform: translateX(50vw) rotate(-90deg);
+}
+
+circle {
+  stroke-dashoffset: 0;
+  stroke-width: 5%;
+  fill: none;
+}
+
+.bg {
+  stroke: transparent;
+  opacity: 0.2;
+}
+
+.progress .indicator {
+  stroke: white;
+}
+
+.footer-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8e8c8c;
+}
+
+.footer-section div {
+  width: 450px;
+  height: 300px;
+  position: relative;
+}

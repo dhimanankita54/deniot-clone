@@ -1,0 +1,86 @@
+.img-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  transition: clip-path 0.5s ease;
+}
+
+.title {
+  position: relative;
+  top: 250px;
+  z-index: 1;
+  font-size: 3em;
+  text-align: center;
+  width: 100%;
+}
+.content {
+  position: relative;
+  margin-top: 200vh;
+  padding: 100px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fixed-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.next-section {
+  display: none;
+  position: relative; /* Ensure it can be stacked above video */
+  z-index: 2; /* Initially below fixed content */
+}
+
+.next-section.show {
+  display: block;
+  z-index: 4; /* Above everything when shown */
+}
+
+.horizontal-scroll-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ensure this takes full viewport height */
+  overflow: hidden; /* Hide the overflowing content */
+}
+
+.fixed-scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* Fix height */
+  overflow: hidden;
+}
+
+.horizontal-scroll-images {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: max-content; /* Ensure container fits all images */
+}
+
+.horizontal-scroll-line {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  white-space: nowrap; /* Prevent line break */
+}
+
+.image {
+  width: 320px;
+  height: 240px;
+  flex-shrink: 0;
+  margin-right: 10px;
+  background-color: #ddd;
+}
